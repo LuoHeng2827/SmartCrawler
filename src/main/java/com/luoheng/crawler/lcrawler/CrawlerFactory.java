@@ -8,7 +8,7 @@ import java.util.Vector;
 import java.util.concurrent.atomic.AtomicLong;
 
 public abstract class CrawlerFactory<T extends Crawler>  {
-    private Vector<T> crawlerVector;
+    private Vector<T> crawlerVector = new Vector<>();
     private boolean stop;
     private boolean over;
     private CrawlerController controller;

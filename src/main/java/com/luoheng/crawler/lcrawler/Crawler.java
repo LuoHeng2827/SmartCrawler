@@ -14,7 +14,7 @@ public abstract class Crawler extends Thread {
     /**
      * 爬虫的当前任务
      */
-    private String currentTask;
+    private Task currentTask;
     /**
      * 爬虫结束标识符
      */
@@ -61,9 +61,9 @@ public abstract class Crawler extends Thread {
         this.number = number;
     }
 
-    public abstract String getTaskData();
+    public abstract Task getTaskData();
 
-    public abstract void crawl(String taskData);
+    public abstract void crawl(Task task);
 
     public boolean isOver() {
         return over;
@@ -116,7 +116,7 @@ public abstract class Crawler extends Thread {
         return factory;
     }
 
-    public String getCurrentTask() {
+    public Task getCurrentTask() {
         return currentTask;
     }
 
