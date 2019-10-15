@@ -30,7 +30,7 @@ public class HtmlNode implements HtmlSelector {
 
     @Override
     public HtmlSelector xpath(String xpathQuery) {
-        return null;
+        throw new UnsupportedOperationException("this method is developing...");
     }
 
     @Override

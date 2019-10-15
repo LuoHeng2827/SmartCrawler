@@ -21,7 +21,10 @@ public class PlainText implements TextSelector {
 
     @Override
     public String get() {
-        return textList.get(0);
+        if (textList != null && textList.size() > 0){
+            return textList.get(0);
+        }
+        return null;
     }
 
     @Override
