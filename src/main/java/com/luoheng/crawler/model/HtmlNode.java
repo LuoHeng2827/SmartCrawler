@@ -89,4 +89,12 @@ public class HtmlNode implements HtmlSelector {
         }
         return new PlainText(textResult);
     }
+
+    public void setData(Elements data) {
+        this.data = data;
+    }
+
+    public Elements getData() {
+        return data;
+    }
 }

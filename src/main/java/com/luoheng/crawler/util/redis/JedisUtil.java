@@ -137,6 +137,15 @@ public class JedisUtil {
         return value;
     }
 
+    public void rpoplpush(String srcKey, String... dstKeys){
+        Jedis jedis = getResource();
+        String value = jedis.rpop(srcKey);
+        for (String dstKey : dstKeys){
+            jedis.lpush(dstKey, value);
+        }
+        jedis.close();
+    }
+
     public void close() {
         jedisPool.close();
     }

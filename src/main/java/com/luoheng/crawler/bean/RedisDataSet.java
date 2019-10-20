@@ -1,5 +1,6 @@
 package com.luoheng.crawler.bean;
 
+import com.luoheng.crawler.model.Bean;
 import com.luoheng.crawler.smart.resource.RedisResource;
 import com.luoheng.crawler.util.redis.JedisUtil;
 

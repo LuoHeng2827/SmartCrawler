@@ -1,6 +1,6 @@
 package com.luoheng.crawler.smart.command;
 
-import com.luoheng.crawler.bean.Bean;
+import com.luoheng.crawler.model.Bean;
 import com.luoheng.crawler.smart.resource.MysqlResource;
 import com.luoheng.crawler.smart.exception.NoSuchAttributeException;
 import com.luoheng.crawler.util.mysql.DBConfig;
@@ -57,7 +57,7 @@ public class MysqlCommand extends Command<MysqlCommand> {
         while (resultSet.next()){
             Bean bean = new Bean();
             try {
-                bean.setAttributeValue(index, resultSet.getObject(index + 1));
+                //bean.setAttributeValue(index, resultSet.getObject(index + 1));
             }catch (NoSuchAttributeException e){
                 e.printStackTrace();
                 System.exit(-1);

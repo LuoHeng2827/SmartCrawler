@@ -5,7 +5,7 @@ package com.luoheng.crawler.smart.exception;
  * @author: lzh
  * @create: 2019-09-17 16:38
  **/
-public class NoSuchAttributeException extends Exception {
+public class NoSuchAttributeException extends RuntimeException {
 
     public NoSuchAttributeException() {
     }

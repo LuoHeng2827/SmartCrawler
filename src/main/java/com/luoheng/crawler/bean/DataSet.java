@@ -1,5 +1,7 @@
 package com.luoheng.crawler.bean;
 
+import com.luoheng.crawler.model.Bean;
+
 /**
  * @description:
  * @author: lzh
